@@ -29,25 +29,6 @@
 </div>
 
 <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
-<script>
-    function show(input) {
-        const file = input.files[0];
-
-            const reader = new FileReader();
-            reader.readAsText(file, "UTF-8");
-            reader.onload = () => {
-                const res = _.words(reader.result, /[-а-яё]{4,}/gim);
-                const result = _.flow([
-                    _.countBy,
-                    _.toPairs,
-                    _.partial(_.orderBy, _, 1, 'desc'),
-                    _.partial(_.take, _, 10),
-                ]);
-                let txt = result(res).map(([word, num]) => `<tr><td>${word}<td>${num}`).join('');
-                let out= document.getElementById('out');
-                out.insertAdjacentHTML('beforeend', txt);
-            };
-    }
-</script>
+<script src="lod.js"></script>
 </body>
 </html>
