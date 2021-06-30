@@ -21,3 +21,4 @@ function show(input) {
         out.insertAdjacentHTML('beforeend', txt);
     };
 }
+console.log(show('show is working'));
