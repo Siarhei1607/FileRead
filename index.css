@@ -2,7 +2,7 @@ body{
     background: antiquewhite;
 }
 #drop-area {
-    width: 40%;
+    width: 85.5%;
     border: 4px dashed gray;
     padding: 100px;
     margin-top:10px;
@@ -13,22 +13,20 @@ body{
 .file-read{
     margin-top:30px;
     text-align: center;
+    max-width: 50%;
 }
-.file-input{
 
-}
 .custom-file-upload{
-    border: 4px solid green;
-    background: green;
+    border: 1px solid #19c719;
+    background: #19c719;
     border-radius: 5px;
     color: white;
     padding: 10px 45px;
     position: absolute;
-    left: 150px;
+    left: 30%;
 }
 div.file-input label:hover{
-    background: #1e6225;
-    color: #ff044c;
+    background: #50ec5a;
 }
 input[type="file"] {
     display: none;
@@ -36,21 +34,21 @@ input[type="file"] {
 
 a{
     text-decoration: none;
-    border: 4px solid green;
-    background: green;
+    border: 1px solid #639bf3;
+    background: #639bf3;
     border-radius: 5px;
     color: white;
     padding: 10px 65px;
     position: absolute;
-    right: 800px;
+    right: 30%;
 }
 a:hover {
-    background: #1e6225;
-    color: #ff044c;
+    background: #92bbfa;
 }
 
 #out{
+    width: 25%;
     margin-top: 100px;
     position: absolute;
-    left: 200px;
+    left: 40%;
 }
