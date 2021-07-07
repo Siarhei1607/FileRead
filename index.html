@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>file</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+<script defer src="bundle.js"></script></head>
 <body>
 <div>
     <div id="drop-area">
@@ -15,7 +14,7 @@
 <div class="file-read">
     <div class="file-input">
         <label class="custom-file-upload">
-        <input type="file" onchange="show(this)">
+            <input type="file" id="file" accept=".txt, .pdf, .epub, .fb2">
             Upload a file
         </label>
     </div>
@@ -27,8 +26,5 @@
 <div id="table-div">
     <table id="out"></table>
 </div>
-
-<script src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
-<script src="lod.js"></script>
 </body>
 </html>
